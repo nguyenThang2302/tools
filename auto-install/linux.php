@@ -1,0 +1,11 @@
+print_r("INSTALL TUR-REPO ...\n");
+shell_exec("sudo add-apt-repository ppa:tur/repo -y >install.log");
+shell_exec("sudo apt update >>install.log");
+print_r("INSTALL DICHVUCODER-REPO ...\n");
+shell_exec("sudo add-apt-repository ppa:dichvucoder/repo -y >>install.log");
+shell_exec("sudo apt update >>install.log");
+print_r("INSTALL PHP ...\n");
+shell_exec("sudo apt install php -y >>install.log");
+print_r("INSTALL DICHVUCODER EXTENSION ...\n");
+shell_exec("sudo apt install php-dichvucoder -y >>install.log");
+print_r("AUTO INSTALL DONE\n");
